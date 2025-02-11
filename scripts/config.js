@@ -20,7 +20,7 @@ export default /** @type {import('./types').IConfig} */ ({
     ban: {
       encrypt: false,
       tag: "ac:kick", // banするタグです
-      players: [], // banするプレイヤーの名前
+      players: [water_challenge], // banするプレイヤーの名前
       ids: [], // banするプレイヤーのuniqueID
       xuids: [] // banするプレイヤーのxuid
       // xuidでbanとは: https://twitter.com/tutinoko_kusaa/status/1587356291734773760
@@ -30,7 +30,7 @@ export default /** @type {import('./types').IConfig} */ ({
     prefix: "!",
     
     /** (試験的) Bedrock Serverのコンソールからscriptevent経由でのコマンドの実行を許可します */
-    enableConsole: false
+    enableConsole: true
   },
   itemList: {
     ban: [
@@ -99,6 +99,7 @@ export default /** @type {import('./types').IConfig} */ ({
     punishment: "kick",
     cancel: true,
     detect: [
+      "minecraft:dirt"
       "minecraft:bedrock",
       "minecraft:barrier",
       "minecraft:command_block",
@@ -123,7 +124,7 @@ export default /** @type {import('./types').IConfig} */ ({
     punishment: "notify"
   },
   itemCheckC: { // 最大の個数より大きい数を持っていたら検知
-    state: true,
+    state: false,
     punishment: "notify"
   },
   itemCheckD: { // 不正なエンチャントレベルを検知
@@ -225,6 +226,7 @@ export default /** @type {import('./types').IConfig} */ ({
       "minecraft:hopper_minecart",
       "minecraft:chest_boat",
       "minecraft:mule"
+      "minecraft:donkey"
     ]
   },
   entityCounter: { // 異常な数のエンティティを検知
@@ -268,13 +270,13 @@ export default /** @type {import('./types').IConfig} */ ({
     cancel: true, // ブロックの破壊をキャンセル
   },
   autoClicker: { // 連打ツールの使用を検知
-    state: true,
+    state: false,
     punishment: "notify",
     maxCPS: 25,
     flagCount: 20 // この回数以上検知されるとFlag (-1で無制限)
   },
   creative: { // クリエイティブになったら検知
-    state: true,
+    state: false,
     punishment: "notify",
     defaultGamemode: "adventure" // クリエを検知した時に設定するGamemode
   },
