@@ -20,7 +20,7 @@ export default /** @type {import('./types').IConfig} */ ({
     ban: {
       encrypt: false,
       tag: "ac:kick", // banするタグです
-      players: [], // banするプレイヤーの名前
+      players: [NMNGyuri], // banするプレイヤーの名前
       ids: [], // banするプレイヤーのuniqueID
       xuids: [] // banするプレイヤーのxuid
       // xuidでbanとは: https://twitter.com/tutinoko_kusaa/status/1587356291734773760
