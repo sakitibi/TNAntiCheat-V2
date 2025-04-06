@@ -2,7 +2,7 @@
   
 ## Re:tutinoko2048
 <img src="https://img.shields.io/github/downloads/tutinoko2048/TNAntiCheat/total?style=for-the-badge"> <a href="https://github.com/tutinoko2048/TNAntiCheat/releases/latest"><img src="https://img.shields.io/github/downloads/tutinoko2048/TNAntiCheat/latest/total?style=for-the-badge"></a><br/>
-<a href="https://github.com/tutinoko2048/TNAntiCheat/releases"><img src="https://img.shields.io/github/v/release/tutinoko2048/TNAntiCheat?display_name=tag&style=for-the-badge"></a>
+<a href="https://github.com/sakitibi/TNAntiCheat-V2/releases"><img src="https://img.shields.io/github/v/release/tutinoko2048/TNAntiCheat?display_name=tag&style=for-the-badge"></a>
 
 MinecraftBE用のチート対策/ワールド管理アドオンです。  
   
